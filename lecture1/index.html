@@ -5,19 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             @media (min-width: 500px) {
-                body {
-                    background-color: red;
+                h1::before {
+                    content: "Welcome to PC version!";
                 }
             }
 
             @media (max-width: 499px) {
-                body {
-                    background-color: blue;
+                h1::before {
+                    content: "Welcome to mobile version!";
                 }
             }
         </style>
     </head>
     <body>
-        <h1>Welcome to My Web Page!</h1>
+        <h1></h1>
     </body>
 </html>

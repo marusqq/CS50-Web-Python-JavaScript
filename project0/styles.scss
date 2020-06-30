@@ -60,14 +60,14 @@ th {
 
 /*divide pc and mobile versions*/
 @media (min-width: 500px) {
-    div::after {
-        content: "Browsing full version";
+    .version::after {
+        content: " full version";
     }
 }
 
 @media (max-width: 499px) {
-    div::after {
-        content: "Browsing mobile version";
+    .version::after {
+        content: " mobile version";
     }
 }
 

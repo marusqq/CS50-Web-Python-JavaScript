@@ -5,8 +5,6 @@ $background_color: lavender;
 $mobile_background_color: lightblue;
 
 
-
-
 h1 {
     color: $text_color;
     text-align: center;
@@ -56,7 +54,7 @@ th {
 }
 
 /*divide pc and mobile versions*/
-@media (min-width: 601px) {
+@media (min-width: 1201px) {
     .version::after {
         content: " full version";
     }
@@ -66,7 +64,7 @@ th {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     .version::after {
         content: " mobile version";
     }

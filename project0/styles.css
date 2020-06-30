@@ -41,6 +41,10 @@ p {
   font-size: 10px;
 }
 
+.profile_picture {
+  text-align: left;
+}
+
 li {
   font-size: 29px;
 }

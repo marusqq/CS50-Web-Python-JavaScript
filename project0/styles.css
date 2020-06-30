@@ -1,3 +1,24 @@
+/*divide pc and mobile versions*/
+@media (min-width: 1201px) {
+  .version::after {
+    content: " full version";
+  }
+
+  body {
+    background-color: lavender;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+@media (max-width: 1200px) {
+  .version::after {
+    content: " mobile version";
+  }
+
+  body {
+    background-color: lightblue;
+    font-family: "Open Sans", sans-serif;
+  }
+}
 h1 {
   color: black;
   text-align: center;
@@ -43,28 +64,6 @@ th {
 #other, #panevezys, #siauliai, #klaipeda, #kaunas, #vilnius {
   text-decoration: underline;
   text-underline-position: under;
-}
-
-/*divide pc and mobile versions*/
-@media (min-width: 1201px) {
-  .version::after {
-    content: " full version";
-  }
-
-  body {
-    background-color: lavender;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-}
-@media (max-width: 1200px) {
-  .version::after {
-    content: " mobile version";
-  }
-
-  body {
-    background-color: lightblue;
-    font-family: "Open Sans", sans-serif;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

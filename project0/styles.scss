@@ -4,6 +4,26 @@ $mobile_fonts: 'Open Sans', sans-serif;
 $background_color: lavender;
 $mobile_background_color: lightblue;
 
+/*divide pc and mobile versions*/
+@media (min-width: 1201px) {
+    .version::after {
+        content: " full version";
+    }
+    body {
+        background-color: $background_color;
+        font-family: $fonts;   
+    }
+}
+
+@media (max-width: 1200px) {
+    .version::after {
+        content: " mobile version";
+    }
+    body {
+        background-color: $mobile_background_color;
+        font-family: $mobile_fonts;
+    }
+}
 
 h1 {
     color: $text_color;
@@ -26,7 +46,6 @@ p {
     text-align: left;
     font-size: 10px
 }
-
 
 li {
     font-size: 29px;
@@ -53,24 +72,5 @@ th {
     text-underline-position: under;
 }
 
-/*divide pc and mobile versions*/
-@media (min-width: 1201px) {
-    .version::after {
-        content: " full version";
-    }
-    body {
-        background-color: $background_color;
-        font-family: $fonts;   
-    }
-}
 
-@media (max-width: 1200px) {
-    .version::after {
-        content: " mobile version";
-    }
-    body {
-        background-color: $mobile_background_color;
-        font-family: $mobile_fonts;
-    }
-}
 

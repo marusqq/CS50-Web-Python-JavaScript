@@ -1,8 +1,73 @@
+$text_color: black;
+$used_fonts: Helvetica, sans-serif;
+$background_color: lavender;
+
+body {
+    font-family: $used_fonts;
+}
+
+
 h1 {
-    color: black;
+    color: $text_color;
     text-align: center;
+    border-style: solid;
 }
 
 p {
-    color: violet;
+    color: grey;
 }
+
+.link {
+    color: blue;
+    text-align: center;
+    font-size: 20px;
+}
+
+.version {
+    color: red;
+    text-align: left;
+    font-size: 10px
+}
+
+body {
+    background-color: $background_color;
+}
+
+li {
+    font-size: 29px;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    height: 50%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    background: rgb(202, 173, 173);
+}
+
+#other, #panevezys, #siauliai, #klaipeda, #kaunas, #vilnius {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+/*divide pc and mobile versions*/
+@media (min-width: 500px) {
+    div::after {
+        content: "Browsing full version";
+    }
+}
+
+@media (max-width: 499px) {
+    div::after {
+        content: "Browsing mobile version";
+    }
+}
+

@@ -4,6 +4,7 @@ $mobile_fonts: 'Open Sans', sans-serif;
 $background_color: lavender;
 $mobile_background_color: lightblue;
 
+
 /*divide pc and mobile versions*/
 @media (min-width: 1201px) {
     .version::after {
@@ -22,6 +23,23 @@ $mobile_background_color: lightblue;
     body {
         background-color: $mobile_background_color;
         font-family: $mobile_fonts;
+    }
+}
+
+%forum_font {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.forum_text {
+    @extend %forum_font;
+    color: black;
+    text-align: left;
+}
+
+div {
+    font-style: italic;
+    ol {
+        color: black
     }
 }
 
@@ -60,15 +78,15 @@ table {
     border-collapse: collapse;
     width: 50%;
     height: 50%;
-}
 
-th, td {
-    border: 1px solid black;
-    padding: 5px;
-}
+    th, td {
+        border: 1px solid black;
+        padding: 5px;
+    }
 
-th {
-    background: lightgrey;
+    th {
+        background: lightgrey;
+    }
 }
 
 #other, #panevezys, #siauliai, #klaipeda, #kaunas, #vilnius {

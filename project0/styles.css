@@ -19,6 +19,22 @@
     font-family: "Open Sans", sans-serif;
   }
 }
+.forum_text {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.forum_text {
+  color: black;
+  text-align: left;
+}
+
+div {
+  font-style: italic;
+}
+div ol {
+  color: black;
+}
+
 h1 {
   color: black;
   text-align: center;
@@ -55,13 +71,11 @@ table {
   width: 50%;
   height: 50%;
 }
-
-th, td {
+table th, table td {
   border: 1px solid black;
   padding: 5px;
 }
-
-th {
+table th {
   background: lightgrey;
 }
 
